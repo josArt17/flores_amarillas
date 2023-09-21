@@ -13,7 +13,7 @@ function App() {
   const [name, setName] = useState("");
 
   useEffect(() => {
-    const name = getQueryParamValue("novia");
+    const name = getQueryParamValue("nombre");
     if (name) {
       document.title = `Flores para ${name}`;
       setName(name);
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       {
-        name && <h1>Flores amarillas para mi novia {name}</h1>
+        name && <h1>Te hice estas flores amarillas mi more {name}</h1>
       }
 
       <div className="flower">
